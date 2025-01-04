@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paddingX {
+  padding: 10px 90px;
+}
+
+.paddingY {
+  padding: 90px 10px;
+}
+
+.paddingXY {
+  padding: 90px 90px;
+}
+
+.marque--linner {
+  position: relative;
+  left: 100%;
+  animation: Loopsl 10s linear infinite;
+  transform: translate3d(-25%, 0, 0);
+  transition: opacity 0.55s;
+}
+
+@keyframes Loopsl {
+  0% {
+    transform: matrix(1, 0, 0, 1, 1, 0);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, -260, 0);
+    opacity: 1;
+  }
+}
+
+.marque--rinner {
+  position: relative;
+  right: 0;
+  animation: Loopsr 10s linear infinite;
+  transform: translate3d(20%, 0, 0);
+  transition: opacity 0.55s;
+}
+
+@keyframes Loopsr {
+  0% {
+    transform: matrix(1, 0, 0, 1, 1, 0);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, 260, 0);
+    opacity: 1;
+  }
+}
