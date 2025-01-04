@@ -235,7 +235,8 @@ const loadLess = () => {
     limitEnd.value -= 5;
     teachers.value = [
       ...db_teachers.value.slice(0, limitEnd.value),
-    ];
+    ];  
   }
 };
+
 </script>
